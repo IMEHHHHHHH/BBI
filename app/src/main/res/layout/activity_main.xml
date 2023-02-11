@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Brat Badan Ideal For  You!!!"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv.1"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etBB"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Tinggi Badan"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RadioButton
+        android:id="@+id/rbLK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Laki-laki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toEndOf="@+id/etBB"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <RadioButton
+        android:id="@+id/rbPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Perempuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toEndOf="@+id/etBB"
+        app:layout_constraintTop_toBottomOf="@+id/rbLK" />
+
+    <Button
+        android:id="@+id/BTprs"
+        android:layout_width="216dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="376dp"
+        android:backgroundTint="#fb8500"
+        android:text="Processing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv.1"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="0"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbPR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
